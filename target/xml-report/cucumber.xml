@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="28.781">
+    <testcase classname="US019 Admin; yeni Staff (Personel) Oluşturma / Güncelleme / Görüntüleme ve Silme" name="US019TC04 Admin; kayıtlı Staff'in (Personel) bilgilerini Silebilir" time="27.72">
+        <failure message="" type="java.lang.AssertionError">
+            <![CDATA[Given Admin medunna_Url sayfasina gider.....................................passed
+When Admin medunna anasayfasinda sag_ust kosedeki kullanici ikonuna tiklar..passed
+And Admin kullanici ikonu altinda yer alan Sign_In butonuna tiklar..........passed
+And Admin user name "Team65" alanini doldurur...............................passed
+And Admin user password "Team65." alanini doldurur..........................passed
+And Admin Sign_In butonuna tiklar...........................................passed
+Given Admin acilan anasayfada Administration ikonuna tiklar.................passed
+And Admin Administration ikonu altinda yer alan User managementi tiklar.....passed
+And Profiles bilgisi ROLE_STAFF olan herhangi bir Staff'i secer ve Delete butonuna tiklanir.passed
+And Admin acilan Pop Up mesajinda Delete butonuna tekrar tiklar.............passed
+Then Basarili bir sekilde silindigi gelen Pop-Up bildirimi ile teyit edilir.failed
+And Admin browser'i kapatir.................................................skipped
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at stepDefinitions.Ui.US019StepD.basarili_bir_sekilde_silindigi_gelen_pop_up_bildirimi_ile_teyit_edilir(US019StepD.java:137)
+	at ✽.Basarili bir sekilde silindigi gelen Pop-Up bildirimi ile teyit edilir(file:///D:/TechProEdu/Projects/MedunnaProject_65/src/test/resources/features/UiFeatures/US019.feature:79)
+]]>
+        </failure>
+    </testcase>
+</testsuite>
